@@ -304,7 +304,7 @@ class SocialDataset(GeneralGraphDataset):
         self.net_feat.drop(self.net_feat.index[~self.net_feat[self.net_tgt_field].isin(inter_uids)], inplace=True)
 
     def _load_data(self, token, dataset_path):
-        super()._load_data(token, dataset_path)
+        #super()._load_data(token, dataset_path)
         self.net_feat = self._load_net(self.dataset_name, self.dataset_path)
 
     @property
